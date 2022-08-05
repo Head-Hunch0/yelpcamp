@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/stylesheets/navbar.css">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand mx-auto" href="/campgrounds"><img src="/images/camping (2).png" class="mx-3" alt="" width="30" height="24">YelpCamp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="/"><img src="/images/camping (1).png" class="mx-3" alt="" width="30" height="24">Home</a>
+                <a class="nav-link" href="/campgrounds"><img src="/images/campsite (1).png" class="mx-3" alt="" width="30" height="24">Campgrounds</a>
+                <a class="nav-link" href="/campgrounds/new"><img src="/images/camping.png" class="mx-3" alt="" width="30" height="24">New Campground</a>
+            </div>
+            <div class="navbar-nav mx-auto">
+                <% if(!currentUser){ %>
+                    <a class="nav-link" href="/login"><img src="/images/log-in.png" class="mx-3" alt="" width="30" height="24">Login</a>
+                    <a class="nav-link" href="/register"><img src="/images/notes.png" class="mx-3" alt="" width="30" height="24">Register</a>
+                <% } else {%>
+                    <a class="nav-link" href="/logout"><img src="/images/door.png" class="mx-3" alt="" width="30" height="24">LogOut</a>
+                <% } %>  
+            </div>
+        </div>
+    </div>
+</nav>
