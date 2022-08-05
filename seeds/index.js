@@ -4,7 +4,7 @@ const cities = require('./cities')
 const { places, descriptors } = require('./seedHelpers');
 const axios = require('axios').default;
 
-mongoose.connect('mongodb://localhost:27017/yelpCamp')
+mongoose.connect('mongodb+srv://BigF00t:uoSnPrS5V8brODof@cluster0.qqplhxe.mongodb.net/?retryWrites=true&w=majority')
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error"));
