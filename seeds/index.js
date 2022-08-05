@@ -30,7 +30,7 @@ async function seedImg() {
 const sample = array => array[Math.floor(Math.random()*array.length)]
 const seedDB = async () => {
     await Campground.deleteMany({});
-    for (let i = 0; i < 40; i++){
+    for (let i = 0; i < 20; i++){
         const random1000 = Math.floor(Math.random() * 1000);
         const price = Math.floor(Math.random() * 5000) + 1000;
         const camp = new Campground({
